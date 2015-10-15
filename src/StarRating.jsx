@@ -1,5 +1,6 @@
 'use strict';
 import React from 'react';
+import ReactDOM from 'react-dom';
 import cx from 'classnames';
 
 /**
@@ -65,8 +66,8 @@ class StarRating extends React.Component {
   }
 
   componentDidMount() {
-    this.root = React.findDOMNode(this.refs.root);
-    this.ratingContainer = React.findDOMNode(this.refs.ratingContainer);
+    this.root = ReactDOM.findDOMNode(this.refs.root);
+    this.ratingContainer = ReactDOM.findDOMNode(this.refs.ratingContainer);
   }
 
   componentWillUnmount() {

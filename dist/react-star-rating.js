@@ -19,6 +19,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactDom = require('react-dom');
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
 var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
@@ -95,8 +99,8 @@ var StarRating = (function (_React$Component) {
   }, {
     key: 'componentDidMount',
     value: function componentDidMount() {
-      this.root = _react2['default'].findDOMNode(this.refs.root);
-      this.ratingContainer = _react2['default'].findDOMNode(this.refs.ratingContainer);
+      this.root = _reactDom2['default'].findDOMNode(this.refs.root);
+      this.ratingContainer = _reactDom2['default'].findDOMNode(this.refs.ratingContainer);
     }
   }, {
     key: 'componentWillUnmount',
